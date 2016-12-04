@@ -1,4 +1,4 @@
-public class P8 {
+public class P_10_8 {
     class Node {
         Node( int value ) {
             this(value,0);
@@ -73,7 +73,7 @@ public class P8 {
     }
 
     public static void main(String[] args) {
-        P8 p = new P8();
+        P_10_8 p = new P_10_8();
         assert p.root == null;
         p.track( 3 );
         assert p.getRankOfNum( 3 ) == 0;
