@@ -11,7 +11,6 @@ class Node:
 def findShortestPath( maze , start, end ):
    def bfs( maze, start, end ):
        queue = deque()
-       level_map = [] 
        node_map = {} # key : location, value : node
        for row in len(maze):
            for col in len(row):
@@ -25,7 +24,6 @@ def findShortestPath( maze , start, end ):
                    if next_node.value == 'O':
                        node.addNext(next_node)
                        next_node.addNext(node)
-       level_map = [] 
 
 def test1():
    maze = [ 'OOXOO',
